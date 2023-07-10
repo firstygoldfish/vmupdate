@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/carl/Documents/vmupdate/vmupdate.csproj": {}
+  },
+  "projects": {
+    "/home/carl/Documents/vmupdate/vmupdate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/carl/Documents/vmupdate/vmupdate.csproj",
+        "projectName": "vmupdate",
+        "projectPath": "/home/carl/Documents/vmupdate/vmupdate.csproj",
+        "packagesPath": "/home/carl/.nuget/packages/",
+        "outputPath": "/home/carl/Documents/vmupdate/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/carl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SshNet": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/dotnet6/sdk/6.0.411/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
