@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.IO;
+﻿using System.IO;
 using Renci.SshNet;
 
 
@@ -15,11 +14,8 @@ class vmupdate
 	//String srvpswd = "delta1Delta!";
 	string NL = Environment.NewLine;
 
-    ConsoleColor currentForeground = Console.ForegroundColor;
-    Console.ForegroundColor = ConsoleColor.DarkBlue;
-	Console.WriteLine("\nVMUPDATE - Carl Last 2023 (C) Capita\n");
-    Console.ForegroundColor = currentForeground;
-    
+	stdText("\nVMUPDATE - Carl Last 2023 (C) Capita");
+
 		try
 		{
 			var ssh = new SshClient(srvip, srvuser, srvpswd);
@@ -59,10 +55,7 @@ class vmupdate
 							}	
 						}
 					}
-					Console.ForegroundColor = ConsoleColor.Green;
-					Console.WriteLine(" -= FINISHED =-");
-					Console.WriteLine("****************\n");
-					Console.ForegroundColor = currentForeground;
+					stdText("-= FINISHED =-");
 				}
 			}
 		}
@@ -82,6 +75,14 @@ class vmupdate
 		{
 			errText(e.ToString());
 		}
+	}
+	
+	public static void stdText(string message)
+	{
+	    ConsoleColor currentForeground = Console.ForegroundColor;
+		Console.ForegroundColor = ConsoleColor.DarkBlue;
+		Console.WriteLine(message + "\n");
+		Console.ForegroundColor = currentForeground;
 	}
 	
 	public static void errText(string message)
