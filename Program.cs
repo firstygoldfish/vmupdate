@@ -8,11 +8,11 @@ class vmupdate
 	static void Main(string[] args)
 	{
 	String srvip = "192.168.56.21";
-	//String srvuser = "oracle";
-	//String srvpswd = "delta1";
-	//String srvip = "carldev.zapto.org";
 	String srvuser = "oracle";
-	String srvpswd = "delta1Delta!";
+	String srvpswd = "delta1";
+	//String srvip = "carldev.zapto.org";
+	//String srvuser = "oracle";
+	//String srvpswd = "delta1Delta!";
 	string NL = Environment.NewLine;
 
     ConsoleColor currentForeground = Console.ForegroundColor;
